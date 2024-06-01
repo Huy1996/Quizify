@@ -14,7 +14,7 @@ class DocumentProcessor:
     def __init__(self):
         self.pages = [] # List to keep track of pages from all documents
 
-    def ingest_document(self):
+    def ingest_documents(self):
         """
         Renders a file uploader in Streamlit app, processes uploaded PDF file,
         extracts their pages, and upadtes the self.pages list with the total number of pages.
@@ -52,4 +52,4 @@ class DocumentProcessor:
 
 if __name__ == "__main__":
     processor = DocumentProcessor()
-    processor.ingest_document()
+    processor.ingest_documents()
